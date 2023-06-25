@@ -1,0 +1,15 @@
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.AssemblyReference.cache
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfoInputs.cache
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.AssemblyInfo.cs
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.csproj.CoreCompileInputs.cache
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\refint\BussinessObject.dll
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
+D:\LEARNING C#\Myfolder\EXEWebAdmin\EXE02_EFood_Admin\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache
