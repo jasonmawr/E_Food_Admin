@@ -1,37 +1,104 @@
-﻿using E_Food_Admin.Models;
+﻿using BussinessObject.Models;
+using E_Food_Admin.Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Repository.IRepository;
+using Repository.Repository;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace E_Food_Admin.Controllers
 {
-    public class HomeController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class HomeController : ODataController
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        IAccountRepository accountRepository;
+        private readonly IConfiguration _configuration;
+        public HomeController(IConfiguration configuration)
         {
-            _logger = logger;
+            accountRepository = new AccountRepository();
+            _configuration = configuration;
         }
-
-        public IActionResult Index()
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Post([FromBody] LoginRequest loginInf)
         {
-            return View();
+
+            Account result = accountRepository.GetByCredentials(loginInf.email, loginInf.password);
+            string role;
+            string id;
+            if (result == null)
+            {
+                if (loginInf.email.Equals(_configuration.GetValue<string>("AdminAccount:email"))
+                    && loginInf.password.Equals(_configuration.GetValue<string>("AdminAccount:password")))
+                {
+                    role = "admin";
+                    var cookieadminOptions = new CookieOptions()
+                    {
+                        IsEssential = true,
+                        Expires = DateTime.Now.AddMinutes(30),
+                        Secure = true,
+                        HttpOnly = false,
+                        SameSite = SameSiteMode.None
+                    };
+                    Response.Cookies.Append("Auth", role, cookieadminOptions);
+                    return Ok(new ResponseObject
+                    {
+                        Success = true,
+                        Message = "login success",
+                        role = 2,
+                        Data = new UserModel { role = 2 }
+                    });
+                }
+                return Ok(new ResponseObject
+                {
+                    Success = false,
+                    Message = "wrong password or email"
+                });
+            }
+            if (result.Status == 0)
+            {
+                return Ok(new ResponseObject
+                {
+                    Success = false,
+                    Message = "account is in-active!"
+                });
+            }
+            role = "user";
+            id = result.AccountId.ToString();
+            var cookieOptions = new CookieOptions()
+            {
+                IsEssential = true,
+                Expires = DateTime.Now.AddMinutes(30),
+                Secure = true,
+                HttpOnly = false,
+                SameSite = SameSiteMode.None
+            };
+            Response.Cookies.Append("Auth", role, cookieOptions);
+            Response.Cookies.Append("id", id, cookieOptions);
+            Response.Cookies.Append("name", result.Email, cookieOptions);
+            return Ok(new ResponseObject
+            {
+                Success = true,
+                Message = "login success",
+                role = 1,
+                Data = new UserModel { role = 1, id = result.AccountId, email = result.Email }
+            });
         }
-
-        public IActionResult Privacy()
+        [HttpGet]
+        [Route("logout")]
+        public IActionResult Get()
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            Response.Cookies.Delete("Auth");
+            return Ok();
         }
     }
 }

@@ -1,0 +1,16 @@
+D:\Exe\E_Food_Admin\Repository\bin\Debug\net5.0\Repository.deps.json
+D:\Exe\E_Food_Admin\Repository\bin\Debug\net5.0\Repository.dll
+D:\Exe\E_Food_Admin\Repository\bin\Debug\net5.0\Repository.pdb
+D:\Exe\E_Food_Admin\Repository\bin\Debug\net5.0\BussinessObject.dll
+D:\Exe\E_Food_Admin\Repository\bin\Debug\net5.0\BussinessObject.pdb
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.csproj.AssemblyReference.cache
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.csproj.CopyComplete
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.dll
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\refint\Repository.dll
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\Repository.pdb
+D:\Exe\E_Food_Admin\Repository\obj\Debug\net5.0\ref\Repository.dll
+D:\Exe\E_Food_Admin\Repository\bin\Debug\net5.0\appsettings.json

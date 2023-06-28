@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\Repository\\Repository.csproj": {}
+    "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\BussinessObject\\BussinessObject.csproj": {
+    "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\BussinessObject\\BussinessObject.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\BussinessObject\\obj\\",
+        "projectPath": "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
+        "outputPath": "D:\\Exe\\E_Food_Admin\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -90,24 +90,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\Repository\\Repository.csproj": {
+    "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\Repository\\obj\\",
+        "projectPath": "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
+        "outputPath": "D:\\Exe\\E_Food_Admin\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -123,8 +123,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\LEARNING C#\\Myfolder\\EXEWebAdmin\\EXE02_EFood_Admin\\BussinessObject\\BussinessObject.csproj"
+              "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj"
               }
             }
           }
@@ -154,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

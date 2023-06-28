@@ -8,6 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.OData;
+using Microsoft.OData.Edm;
+using Microsoft.OData.ModelBuilder;
+using Microsoft.OpenApi.Models;
+using BussinessObject.Models;
+using Repository.IRepository;
+using Repository.Repository;
+using EXE02_EFood_API.Repository.IRepository;
+using EXE02_EFood_API.Repository;
 
 namespace E_Food_Admin
 {
@@ -24,6 +33,18 @@ namespace E_Food_Admin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IPremiumRepository, PremiumRepository>();
+            services.AddScoped<IPremium_hisRepository, Premium_hisRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "api", Version = "v1" });
+            });
+            services.AddControllers().AddOData(o => o.Select().Filter()
+                .Count().OrderBy().Expand().SetMaxTop(100)
+                .AddRouteComponents("odata", GetEdmModel()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,13 +53,11 @@ namespace E_Food_Admin
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "api v1"));
             }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+
+            app.UseODataBatching();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -48,10 +67,25 @@ namespace E_Food_Admin
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllers();
             });
+        }
+        private static IEdmModel GetEdmModel()
+        {
+            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+
+            // Define the entity set for Employee
+            var accountSet = builder.EntitySet<Account>("Accounts");
+
+            //// Define the entity set for Department
+            //var departmentSet = builder.EntitySet<Department>("Departments");
+
+            //// Define the entity set for CompanyProject
+            //var companyProjectSet = builder.EntitySet<CompanyProject>("CompanyProjects");
+
+
+                
+            return builder.GetEdmModel();
         }
     }
 }
