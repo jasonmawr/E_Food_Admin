@@ -1993,6 +1993,8 @@
         "dependencies": {
           "BussinessObject": "1.0.0",
           "Microsoft.AspNetCore.OData": "8.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "Repository": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3"
         },

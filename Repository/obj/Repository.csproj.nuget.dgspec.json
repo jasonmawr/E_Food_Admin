@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj": {}
+    "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj": {
+    "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj",
+        "projectPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj",
         "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\Exe\\E_Food_Admin\\BussinessObject\\obj\\",
+        "outputPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -94,14 +94,14 @@
         }
       }
     },
-    "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj": {
+    "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Exe\\E_Food_Admin\\Repository\\Repository.csproj",
+        "projectPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\Exe\\E_Food_Admin\\Repository\\obj\\",
+        "outputPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -123,8 +123,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\Exe\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj"
+              "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\BussinessObject\\BussinessObject.csproj"
               }
             }
           }
