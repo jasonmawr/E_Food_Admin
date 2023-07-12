@@ -43,7 +43,7 @@ namespace BussinessObject.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(local);Uid=sa;Pwd=123456;Database=E_Food");
+                optionsBuilder.UseSqlServer("Server=(local);Uid=sa;Pwd=1;Database=E_Food");
             }
         }
 

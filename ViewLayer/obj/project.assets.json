@@ -2635,6 +2635,8 @@
         "dependencies": {
           "BussinessObject": "1.0.0",
           "Microsoft.AspNetCore.OData": "8.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "Repository": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3"
         },
@@ -8161,11 +8163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Exe\\E_Food_Admin\\ViewLayer\\ViewLayer.csproj",
+      "projectUniqueName": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\ViewLayer\\ViewLayer.csproj",
       "projectName": "ViewLayer",
-      "projectPath": "D:\\Exe\\E_Food_Admin\\ViewLayer\\ViewLayer.csproj",
+      "projectPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\ViewLayer\\ViewLayer.csproj",
       "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-      "outputPath": "D:\\Exe\\E_Food_Admin\\ViewLayer\\obj\\",
+      "outputPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\ViewLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8187,8 +8189,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Exe\\E_Food_Admin\\E_Food_Admin\\E_Food_Admin.csproj": {
-              "projectPath": "D:\\Exe\\E_Food_Admin\\E_Food_Admin\\E_Food_Admin.csproj"
+            "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\E_Food_Admin\\E_Food_Admin.csproj": {
+              "projectPath": "D:\\Exe\\E_Food_Admin 1\\E_Food_Admin\\E_Food_Admin\\E_Food_Admin.csproj"
             }
           }
         }

@@ -38,6 +38,9 @@ namespace E_Food_Admin
             services.AddScoped<IPremiumRepository, PremiumRepository>();
             services.AddScoped<IPremium_hisRepository, Premium_hisRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRestaurantRepository, RestaurantRepository>();
+            services.AddScoped<IDishRepository, DishRepository>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "api", Version = "v1" });

@@ -107,12 +107,40 @@ namespace ViewLayer.Controllers
             return View();
         }
 
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        // GET: api/Employee/Delete/{id}
         public async Task<IActionResult> Confirm(int transid)
         {
-            var response = await client.PutAsync($"{TransactionApiUrl}/confirm/{transid}", null);
+
+            var response = await client.PutAsync($"{TransactionApiUrl}/Confirm/{transid}", null);
+            string strData = await response.Content.ReadAsStringAsync();
+
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            {
+                ResponeObject res = JsonSerializer.Deserialize<ResponeObject>(strData, options);
+                TempData["MESSAGE"] = res.Message;
+                return RedirectToAction("login", "Home");
+            }
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadAsStringAsync();
+                var employee = JsonConvert.DeserializeObject<List<UserApiModel>>(data);
+                return View(employee[0]);
+            }
+            return View();
+
+        }
+
+
+        // POST: api/Employee/Delete/{id}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Confirm(int transid, IFormCollection collection)
+        {
+            var response = await client.PutAsync($"{TransactionApiUrl}/Confirm/{transid}", null);
             string strData = await response.Content.ReadAsStringAsync();
 
             var options = new JsonSerializerOptions
@@ -129,11 +157,8 @@ namespace ViewLayer.Controllers
             {
                 return RedirectToAction(nameof(Index));
             }
-            else
-            {
-                return View();
-            }
+            return View();
         }
-
+       
     }
 }

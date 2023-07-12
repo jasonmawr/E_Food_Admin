@@ -187,7 +187,7 @@ namespace EXE02_EFood_API.Controllers
             return NoContent();
         }
 
-        [HttpPut("confirm/{transid}")]
+        [HttpPut("Confirm/{transid}")]
         public IActionResult ConfirmPremium(int transid)
         {
             var transaction = _transactionRepository.FindById(transid);
